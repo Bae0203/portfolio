@@ -1,11 +1,16 @@
 import styled from "styled-components";
+interface IIsSlogan {
+  isSlogan: boolean;
+}
 
 export const Header = styled.header`
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: ${(props: IIsSlogan) =>
+    props.isSlogan ? "none" : "1px solid #cdcdcd"};
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
+  position: fixed;
 `;
 
 export const ContextWrap = styled.nav`

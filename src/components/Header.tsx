@@ -3,7 +3,7 @@ import * as S from "../styles/Header.style";
 
 const Header = () => {
   return (
-    <S.Header>
+    <S.Header isSlogan={true}>
       <S.TitleContext>배경민의 포트폴리오</S.TitleContext>
       <S.ContextWrap>
         <p>연락처</p>
