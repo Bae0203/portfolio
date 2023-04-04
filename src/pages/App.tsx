@@ -1,5 +1,5 @@
 import React from "react";
-import Contents from "../components/ContentsTitle";
+import Contents from "../components/StartContentsTitle";
 import Slogan from "../components/Slogan";
 
 function App() {

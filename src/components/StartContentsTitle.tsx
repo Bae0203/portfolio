@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "../styles/ContentTitle.style";
+import * as S from "../styles/StartContentTitle.style";
 
 interface IContentsProps {
   title: string;
