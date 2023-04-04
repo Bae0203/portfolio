@@ -18,11 +18,11 @@ export const ContextWrap = styled.nav`
   justify-content: space-between;
   width: 20%;
   font-size: 1rem;
-  margin-left: 30%;
+  margin-left: 10%;
 `;
 
 export const TitleContext = styled.p`
   font-size: 1.125rem;
   font-weight: 500;
-  margin: 0 10%;
+  margin: 0 20%;
 `;
