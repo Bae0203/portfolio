@@ -1,0 +1,51 @@
+[
+  {
+    "stacName": "React",
+    "experience": "Good",
+    "Usage": { "project": true, "algorithm": false },
+    "backgroundColor": "#9A94E8",
+    "color": "black"
+  },
+  {
+    "stacName": "Next.js",
+    "experience": "Normal",
+    "Usage": { "project": true, "algorithm": false },
+    "backgroundColor": "#282828",
+    "color": "white"
+  },
+  {
+    "stacName": "TypeScript",
+    "experience": "Normal",
+    "Usage": { "project": true, "algorithm": false },
+    "backgroundColor": "#6985CC",
+    "color": "white"
+  },
+  {
+    "stacName": "JavaScript",
+    "experience": "Normal",
+    "Usage": { "project": true, "algorithm": true },
+    "backgroundColor": "#F5E094",
+    "color": "black"
+  },
+  {
+    "stacName": "C",
+    "experience": "Normal",
+    "Usage": { "project": false, "algorithm": true },
+    "backgroundColor": "#D9D9D9",
+    "color": "black"
+  },
+  {
+    "stacName": "Java",
+    "experience": "Bad",
+    "Usage": { "project": false, "algorithm": true },
+    "backgroundColor": "#F4F4F4",
+    "color": "#4777BF"
+  },
+  {
+    "stacName": "Python",
+    "experience": "Bad",
+    "Usage": { "project": false, "algorithm": true },
+    "backgroundColor": "#95B3FF",
+    "color": "black"
+  }
+]
