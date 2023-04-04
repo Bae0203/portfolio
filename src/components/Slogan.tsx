@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "../styles/Slpgan.style";
+import * as S from "../styles/Slogan.style";
 
 const Slogan = () => {
   return (
