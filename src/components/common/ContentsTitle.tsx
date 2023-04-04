@@ -8,10 +8,10 @@ interface IContentsTitleProps {
 
 const ContentsTitle = (props: IContentsTitleProps) => {
   return (
-    <nav>
+    <S.ContentWrap>
       <S.Title>{props.title}</S.Title>
       {props.context ? <S.Context>{props.context}</S.Context> : null}
-    </nav>
+    </S.ContentWrap>
   );
 };
 

@@ -12,3 +12,6 @@ export const Context = styled.p`
   width: 41rem;
   word-break: keep-all;
 `;
+export const ContentWrap = styled.nav`
+  margin: 5rem 0;
+`;
