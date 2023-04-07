@@ -17,6 +17,7 @@ export const MainWrap = styled.div`
   padding: 2rem;
   border-radius: 1.2rem;
   margin: 0 auto;
+  margin-top: 2rem;
   height: 1.2rem;
 `;
 
