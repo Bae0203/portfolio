@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "../../styles/ListBox.style";
+import * as S from "../../../styles/ListBox.style";
 
 const ListBox = () => {
   return (
