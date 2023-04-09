@@ -9,7 +9,7 @@ const Stacs = () => {
   const [stacList] = useState<IStacs[]>(stacValue);
   return (
     <S.MainWrap>
-      <ContentsTitle title="스택" context={"null"} />
+      <ContentsTitle title="스택" context={null} />
       <S.ExampleStac>
         <S.ContextWrapNav marginLeft="5%">
           <p>기술명</p>

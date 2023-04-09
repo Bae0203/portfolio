@@ -5,6 +5,7 @@ export const Title = styled.p`
   letter-spacing: 0.2rem;
   color: #4a4d57;
   margin-bottom: 1rem;
+  word-break: keep-all;
 `;
 
 export const Context = styled.p`
