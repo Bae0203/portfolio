@@ -10,7 +10,7 @@ function App() {
       <Slogan />
       <Contents title="안녕하세요! 만나서 반가워요" context="프론트 잼있음" />
       <Stacs />
-      <ListBox />
+      <ListBox index={0} />
     </>
   );
 }

@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "../../../styles/ListBox.style";
+import ArrowBtn from "./Arrow/ArrowBtn";
+import ListValue from "./ListValue.json";
 
-const ListBox = () => {
+interface IListBoxProps {
+  index: number;
+}
+
+const ListBox = (props: IListBoxProps) => {
+  const [contextIndex, setContextIndex] = useState<number>(0);
   return (
     <S.MainNavBox>
-      <p>title</p>
-      <nav>
-        <div>button</div>
-        <p>Context</p>
-        <div>button</div>
-      </nav>
+      <S.Title>{ListValue[props.index].title}</S.Title>
+      <S.ContextButtonWrap>
+        <ArrowBtn
+          endindex={0}
+          isRight={false}
+          contextIndex={contextIndex}
+          setContextIndex={setContextIndex}
+        ></ArrowBtn>
+        <S.Context>{ListValue[props.index].context[contextIndex]}</S.Context>
+        <ArrowBtn
+          endindex={ListValue[props.index].context.length - 1}
+          isRight={true}
+          contextIndex={contextIndex}
+          setContextIndex={setContextIndex}
+        ></ArrowBtn>
+      </S.ContextButtonWrap>
     </S.MainNavBox>
   );
 };
