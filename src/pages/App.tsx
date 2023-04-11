@@ -3,6 +3,7 @@ import Contents from "../components/StartContentsTitle";
 import Slogan from "../components/Slogan";
 import ListBox from "../components/common/listbox/ListBox";
 import Stacs from "../components/stac/Stacs";
+import Projects from "../components/project/Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       />
       <Stacs />
       <ListBox index={0} />
+      <Projects />
     </>
   );
 }
