@@ -9,22 +9,30 @@ interface IAttributeValue {
 }
 
 export const MainWrap = styled.div`
-  width: 100%;
   background-color: ${(props: IAttributeValue) => props.backgroundColor};
   color: ${(props: IAttributeValue) => props.color};
   font-size: 1.2rem;
   display: flex;
   padding: 2rem;
   border-radius: 1.2rem;
+  height: 1.2rem;
+  width: 100%;
   margin: 0 auto;
   margin-top: 2rem;
-  height: 1.2rem;
+  transition: 0.5s;
+  &:hover {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    filter: drop-shadow(
+      0rem 1.5rem 2rem ${(props: IAttributeValue) => props.backgroundColor}
+    );
+  }
 `;
 
 export const ContextWrapNav = styled.nav`
   margin-left: ${(props: IAttributeValue) => props.marginLeft};
   display: flex;
-  position: absolute;
+  width: 13rem;
 `;
 
 export const UsageWrapNav = styled.nav`

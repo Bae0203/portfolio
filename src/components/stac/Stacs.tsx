@@ -14,24 +14,26 @@ const Stacs = () => {
         <S.ContextWrapNav marginLeft="5%">
           <p>기술명</p>
         </S.ContextWrapNav>
-        <S.ContextWrapNav marginLeft="23%">
+        <S.ContextWrapNav marginLeft="10%">
           <p>숙련도</p>
         </S.ContextWrapNav>
-        <S.ContextWrapNav marginLeft="45%">
+        <S.ContextWrapNav marginLeft="15%">
           <p>활용 용도</p>
         </S.ContextWrapNav>
       </S.ExampleStac>
-      {stacList.map((value) => {
-        return (
-          <StacBox
-            stacName={value.stacName}
-            experience={value.experience}
-            Usage={value.Usage}
-            backgroundColor={value.backgroundColor}
-            color={value.color}
-          />
-        );
-      })}
+      <S.StacBoxWrap>
+        {stacList.map((value) => {
+          return (
+            <StacBox
+              stacName={value.stacName}
+              experience={value.experience}
+              Usage={value.Usage}
+              backgroundColor={value.backgroundColor}
+              color={value.color}
+            />
+          );
+        })}
+      </S.StacBoxWrap>
     </S.MainWrap>
   );
 };

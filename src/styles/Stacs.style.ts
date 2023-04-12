@@ -24,6 +24,11 @@ export const ExampleStac = styled.div`
 `;
 
 export const ContextWrapNav = styled.nav`
-  position: absolute;
   margin-left: ${(props: IAttributeValue) => props.marginLeft};
+  display: flex;
+  width: 13rem;
+`;
+
+export const StacBoxWrap = styled.div`
+  height: 50rem;
 `;
