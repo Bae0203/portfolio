@@ -36,7 +36,7 @@
   },
   {
     "stacName": "Java",
-    "experience": "Bad",
+    "experience": "Normal",
     "Usage": { "project": false, "algorithm": true },
     "backgroundColor": "#F4F4F4",
     "color": "#4777BF"
