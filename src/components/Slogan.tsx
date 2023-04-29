@@ -1,9 +1,19 @@
-import React from "react";
+import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import * as S from "../styles/Slogan.style";
 
-const Slogan = () => {
+interface ISloganProps {
+  setSloganHeight: Dispatch<SetStateAction<number>>;
+}
+
+const Slogan = (props: ISloganProps) => {
+  const MainRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    props.setSloganHeight(
+      MainRef.current?.offsetHeight ? MainRef.current.offsetHeight : 0
+    );
+  }, []);
   return (
-    <S.SloganBackground>
+    <S.SloganBackground ref={MainRef}>
       <S.Title>실패를 두려워하지않는 개발자</S.Title>
       <S.WrapSubTitle>
         <S.subTitle>
