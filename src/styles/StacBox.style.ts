@@ -19,10 +19,8 @@ export const MainWrap = styled.div`
   width: 100%;
   margin: 0 auto;
   margin-top: 2rem;
-  transition: 0.5s;
+  transition: 0.2s;
   &:hover {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
     filter: drop-shadow(
       0rem 1.5rem 2rem ${(props: IAttributeValue) => props.backgroundColor}
     );
