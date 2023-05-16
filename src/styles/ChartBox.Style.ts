@@ -9,6 +9,11 @@ interface IisHover {
   isHover: boolean;
 }
 
+export const ChartContainer = styled.nav`
+  transition: 0.4s;
+  padding-top: ${(props: IisHover) => (props.isHover ? "0rem" : "1rem")};
+`;
+
 export const MainContainer = styled.nav`
   width: 37rem;
   height: 39rem;
@@ -40,7 +45,7 @@ export const ContentsBox = styled.nav`
 `;
 
 export const Title = styled.p`
-  font-size: ${(props: IisHover) => (props.isHover ? "2rem" : "2.25rem")};
+  font-size: 2rem;
   font-weight: bold;
   color: #4a4d57;
   margin-bottom: 3rem;

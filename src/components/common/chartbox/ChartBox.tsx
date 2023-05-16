@@ -14,21 +14,23 @@ const ChartBox = (props: IProjectValue) => {
     >
       <S.SubContainer>
         <S.ContentsBox>
-          <S.Title isHover={isHover}>{props.title}</S.Title>
+          <S.Title>{props.title}</S.Title>
           <S.PlusBtn image={PlusBtn} isHover={isHover} />
-          {props.contents.map((value, index) => {
-            return (
-              <ChartContent
-                key={index}
-                isHover={isHover}
-                title={value.title}
-                context={value.context}
-                explane={value.explane}
-                explaneUrl={value.explaneUrl}
-                github={value.github}
-              />
-            );
-          })}
+          <S.ChartContainer isHover={isHover}>
+            {props.contents.map((value, index) => {
+              return (
+                <ChartContent
+                  key={index}
+                  isHover={isHover}
+                  title={value.title}
+                  context={value.context}
+                  explane={value.explane}
+                  explaneUrl={value.explaneUrl}
+                  github={value.github}
+                />
+              );
+            })}
+          </S.ChartContainer>
         </S.ContentsBox>
         <S.BackgroundImageBox image={SvgUrl[props.index]} isHover={isHover} />
       </S.SubContainer>
