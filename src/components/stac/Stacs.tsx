@@ -22,7 +22,7 @@ const Stacs = () => {
         </S.ContextWrapNav>
       </S.ExampleStac>
       <S.StacBoxWrap>
-        {stacList.map((value) => {
+        {stacList.map((value, index) => {
           return (
             <StacBox
               stacName={value.stacName}
@@ -30,6 +30,7 @@ const Stacs = () => {
               Usage={value.Usage}
               backgroundColor={value.backgroundColor}
               color={value.color}
+              key={index}
             />
           );
         })}

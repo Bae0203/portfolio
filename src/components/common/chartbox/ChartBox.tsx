@@ -1,26 +1,37 @@
 import React, { useState } from "react";
 import * as S from "../../../styles/ChartBox.Style";
-import { Highthon, Kosamidas, PlusBtn } from "./useChartBox";
+import { PlusBtn } from "./useChartBox";
+import { SvgUrl } from "./useChartBackgroundSvg";
 import ChartContent from "./chartContent/ChartContent";
+import { IProjectValue } from "../../../types/IProject";
 
-const ChartBox = () => {
+const ChartBox = (props: IProjectValue) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
     <S.MainContainer
       onMouseOver={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <S.ContentsBox>
-        <S.Title>title</S.Title>
-        {isHover ? (
-          <>
-            <ChartContent />
-          </>
-        ) : (
-          <S.PlusBtn image={PlusBtn} />
-        )}
-      </S.ContentsBox>
-      <S.BackgroundImageBox image={Kosamidas} isHover={isHover} />
+      <S.SubContainer>
+        <S.ContentsBox>
+          <S.Title isHover={isHover}>{props.title}</S.Title>
+          <S.PlusBtn image={PlusBtn} isHover={isHover} />
+          {props.contents.map((value, index) => {
+            return (
+              <ChartContent
+                key={index}
+                isHover={isHover}
+                title={value.title}
+                context={value.context}
+                explane={value.explane}
+                explaneUrl={value.explaneUrl}
+                github={value.github}
+              />
+            );
+          })}
+        </S.ContentsBox>
+        <S.BackgroundImageBox image={SvgUrl[props.index]} isHover={isHover} />
+      </S.SubContainer>
     </S.MainContainer>
   );
 };
