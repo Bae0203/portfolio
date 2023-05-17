@@ -11,7 +11,7 @@ export const Title = styled.p`
   padding-top: 20rem;
   font-size: 3.375rem;
   letter-spacing: 0.1em;
-  font-weight: 500;
+  font-weight: 700;
 `;
 
 export const subTitle = styled.p`
