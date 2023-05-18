@@ -15,12 +15,12 @@ export const ChartContainer = styled.nav`
 `;
 
 export const MainContainer = styled.nav`
-  width: 37rem;
-  height: 39rem;
+  width: 34rem;
+  height: 35rem;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 `;
 
 export const BackgroundImageBox = styled.div`
@@ -57,7 +57,7 @@ export const Title = styled.p`
 export const PlusBtn = styled.div`
   background-image: url(${(props: IBackgroundImageProps) => props.image});
   background-size: cover;
-  margin-top: -3rem;
+  margin-top: -2rem;
   width: 3rem;
   height: 3rem;
   position: absolute;
