@@ -4,6 +4,7 @@ import Slogan from "../components/Slogan";
 import ListBox from "../components/common/listbox/ListBox";
 import Stacs from "../components/stac/Stacs";
 import Projects from "../components/project/Projects";
+import Link from "../components/link/Link";
 
 function App() {
   const [sloganHeight, setSloganHeight] = useState<number>(0);
@@ -17,6 +18,8 @@ function App() {
       <Stacs />
       <ListBox index={0} />
       <Projects />
+      <ListBox index={1} />
+      <Link />
     </>
   );
 }
