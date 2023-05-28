@@ -1,0 +1,24 @@
+{
+  "contentValue": [
+    {
+      "title": "연락처",
+      "content": {
+        "title": "Email",
+        "context": ["gmbae06@gmail.com", "gmbae06@dgsw.hs.kr"]
+      }
+    },
+    {
+      "title": "깃허브",
+      "content": {
+        "context": ["https://github.com/bae0203"]
+      }
+    },
+    {
+      "title": "블로그",
+      "content": {
+        "context": ["https://velog.io/@gmbae2006"]
+      }
+    }
+  ],
+  "ShortCutBtn": ["https://zrr.kr/rAoQ", "https://www.instagram.com/gmbae06/"]
+}
