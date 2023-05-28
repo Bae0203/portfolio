@@ -5,6 +5,7 @@ import ListBox from "../components/common/listbox/ListBox";
 import Stacs from "../components/stac/Stacs";
 import Projects from "../components/project/Projects";
 import Link from "../components/link/Link";
+import Footer from "../components/Footer/Footer";
 
 function App() {
   const [sloganHeight, setSloganHeight] = useState<number>(0);
@@ -20,6 +21,9 @@ function App() {
       <Projects />
       <ListBox index={1} />
       <Link />
+      <p>실패를 두려워하지 않는 개발자</p>
+      <p>저의 포트폴리오를 봐주셔서 감사합니다.</p>
+      <Footer />
     </>
   );
 }
