@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import * as S from "./ShortCutBtn.style";
 
 interface IShortCutProps {
   Link: string;
@@ -7,11 +7,8 @@ interface IShortCutProps {
 }
 
 const ShortCutBtn = (props: IShortCutProps) => {
-  const Navigate = useNavigate();
   return (
-    <a href={props.Link} target="_blank">
-      <div>사진</div>
-    </a>
+    <S.MainATag href={props.Link} target="_blank" SvgImage={props.SvgImage} />
   );
 };
 
