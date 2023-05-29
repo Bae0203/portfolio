@@ -14,6 +14,7 @@ export const ContentsContainer = styled.div`
 export const ShortCutContainer = styled.div`
   width: 100%;
   margin-top: 8%;
+  display: flex;
 `;
 
 export const FooterContainer = styled.footer`
