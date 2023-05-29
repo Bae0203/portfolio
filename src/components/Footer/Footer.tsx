@@ -2,6 +2,7 @@ import React from "react";
 import FooterValue from "./FooterValue.json";
 import FooterContents from "./FooterContents";
 import * as S from "../../styles/Footer.style";
+import ShortCutBtn from "./ShortCutBtn";
 
 const Footer = () => {
   return (
@@ -21,7 +22,9 @@ const Footer = () => {
           })}
         </S.ContentsContainer>
         <S.ShortCutContainer>
-          <div>dd</div>
+          {FooterValue.ShortCutBtn.map((value, index) => {
+            return <ShortCutBtn Link={value} SvgImage="" key={index} />;
+          })}
         </S.ShortCutContainer>
       </S.MainContainer>
     </S.FooterContainer>
