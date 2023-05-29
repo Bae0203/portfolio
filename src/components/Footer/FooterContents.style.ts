@@ -10,3 +10,7 @@ export const ContextContainer = styled.div`
 export const ContextTitle = styled.p`
   margin-right: 0.5rem;
 `;
+
+export const Title = styled.p`
+  margin-bottom: 0.3rem;
+`;

@@ -12,7 +12,7 @@ interface IContetnsProps {
 const FooterContents = (props: IContetnsProps) => {
   return (
     <div>
-      <p>{props.title}</p>
+      <S.Title>{props.title}</S.Title>
       <S.ContextContainer>
         {props.context.title && (
           <S.ContextTitle>{props.context.title} </S.ContextTitle>
