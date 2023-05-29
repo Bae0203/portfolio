@@ -19,7 +19,7 @@ export const ShortCutContainer = styled.div`
 
 export const FooterContainer = styled.footer`
   width: 100%;
-  height: 25rem;
+  height: 20rem;
   background-color: #dfe1e3;
   display: flex;
   justify-content: center;
