@@ -25,6 +25,7 @@ const ChartBox = (props: IProjectValue) => {
                   <ChartContent
                     key={index}
                     isHover={isHover}
+                    isLink={props.isLink}
                     title={value.title}
                     context={value.context}
                     explane={value.explane}
@@ -34,7 +35,10 @@ const ChartBox = (props: IProjectValue) => {
                 );
               })
             ) : (
-              <ChartLinkContent url={props.url ? props.url : ""} />
+              <ChartLinkContent
+                url={props.url ? props.url : ""}
+                isHover={isHover}
+              />
             )}
           </S.ChartContainer>
         </S.ContentsBox>
